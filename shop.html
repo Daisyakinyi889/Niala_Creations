@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop - Niala Creations</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Niala Creations</h1>
+      <nav class="navbar">
+  <div class="nav-toggle" id="nav-toggle">
+    ☰
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#cart" id="cart-link">🛒 Cart (0)</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+  <section class="shop">
+    <h2>Our Scrunchies</h2>
+    <div class="products">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="images/chocolatesatinscrunchie.jpeg" alt="Chocolate Scrunchie" />
+        <p><strong>Chocolate Scrunchie</strong></p>
+        <p>KES 150</p>
+        <a class="btn" href="https://wa.me/254717468242?text=I'm%20interested%20in%20Chocolate%20Satin%20scrunchie">Order via WhatsApp</a>
+        <button class="btn add-to-cart" data-name="Chocolate Scrunchie" data-price="150">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="images/navybluescrunchie.jpeg" alt="Navy Blue Scrunchie" />
+        <p><strong>Navy Blue Scrunchie</strong></p>
+        <p>KES 150</p>
+        <a class="btn" href="https://wa.me/254717468242?text=I'm%20interested%20in%20Navy%20Blue%20scrunchie">Order via WhatsApp</a>
+        <button class="btn add-to-cart" data-name="Navy Blue Scrunchie" data-price="150">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="images/pinksatinscrunchie.jpeg" alt="Pink Scrunchie" />
+        <p><strong>Pink Scrunchie</strong></p>
+        <p>KES 150</p>
+        <a class="btn" href="https://wa.me/254717468242?text=I'm%20interested%20in%20Pink%20Satin%20scrunchie">Order via WhatsApp</a>
+        <button class="btn add-to-cart" data-name="Pink Scrunchie" data-price="150">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="images/purplescrunchie.jpeg" alt="Purple Scrunchie" />
+        <p><strong>Purple Scrunchie</strong></p>
+        <p>KES 150</p>
+        <a class="btn" href="https://wa.me/254717468242?text=I'm%20interested%20in%20Purple%20Satin%20scrunchie">Order via WhatsApp</a>
+        <button class="btn add-to-cart" data-name="Purple Scrunchie" data-price="150">Add to Cart</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="images/whitesatinscrunchie.jpeg" alt="White Scrunchie" />
+        <p><strong>White Scrunchie</strong></p>
+        <p>KES 150</p>
+        <a class="btn" href="https://wa.me/254717468242?text=I'm%20interested%20in%20White%20Satin%20scrunchie">Order via WhatsApp</a>
+        <button class="btn add-to-cart" data-name="White Scrunchie" data-price="150">Add to Cart</button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="images/yellowsatinscrunchie.jpeg" alt="Yellow Scrunchie" />
+        <p><strong>Yellow Scrunchie</strong></p>
+        <p>KES 150</p>
+        <a class="btn" href="https://wa.me/254717468242?text=I'm%20interested%20in%20Yellow%20Satin%20scrunchie">Order via WhatsApp</a>
+        <button class="btn add-to-cart" data-name="Yellow Scrunchie" data-price="150">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <!-- Main Cart Section -->
+    <section class="cart-section">
+      <h3>Your Cart 🧺</h3>
+      <ul id="cart-items"></ul>
+      <p><strong>Total:</strong> KES <span id="cart-total">0</span></p>
+    </section>
+
+    <!-- Drawer Cart (Popup) -->
+    <div id="cart-drawer" class="hidden">
+      <div class="drawer-content">
+        <h3>Your Cart 🧺</h3>
+        <ul id="drawer-cart-items"></ul>
+        <p><strong>Total:</strong> KES <span id="drawer-cart-total">0</span></p>
+      </div>
+    </div>
+
+  </section>
+
+  <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+  <footer>
+    <p>&copy; 2025 Niala Creations. All rights reserved.</p>
+  </footer>
+
+  <!-- Floating Cart Icon -->
+  <div id="floating-cart" title="View Cart">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+      <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2c1.105 0 2-.896 2-2s-.895-2-2-2zm0 2.5a.5.5 0 110-1 .5.5 0 010 1zm10-2.5c-1.104 0-2 .896-2 2s.896 2 2 2c1.105 0 2-.896 2-2s-.895-2-2-2zm0 2.5a.5.5 0 110-1 .5.5 0 010 1zM7.062 6l1.625 7h8.063l1.625-7H7.062zM6 4h13.982l-2.681 11.518c-.174.745-.86 1.482-1.678 1.482H9.377c-.818 0-1.504-.737-1.679-1.482L5.017 4H3V2h2.236c.377 0 .717.252.826.62L6 4z"/>
+    </svg>
+    <span id="cart-badge">0</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/shop.js"></script>
+
+</body>
+</html>
